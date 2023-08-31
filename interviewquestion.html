@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Interview Practice</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" type="text/css" href="css/interviewquestion.css">
+  <style>
+    body{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+        }
+  </style>
+</head>
+
+<body>
+    <nav>
+    <div id="navContainer">
+    <img src="images/Logo.svg" alt="Company Logo" id="companyLogo"/>
+      <ul id="navBar">
+        <li class="navMenu"><a href=landingpage.html>Home</a></li>
+      <li class="navMenu">About</li>
+      <li class="navMenu">Login</li>
+      </ul>
+    </div>
+    </nav>
+    
+    <main>
+      <section id="sideNavContainer">
+        <a href="#questionBox" class="menu-item"><span class="marks">?</span>Question</a>
+        <a href="#answerTranscript" class="menu-item"><span class="marks">!</span>Your Answer</a>
+        <a href="#assessment" class="menu-item"><span class="marks">%</span>Assessment</a>
+        <a href="#revisedAnswer" class="menu-item"><span class="marks">~</span>Revised Answer</a>
+        <br><br><br><br><br><br><br>
+        <a href="#home"><span class="marks"></span>Next >></a>
+      </section>
+
+      <section id="mainContent">
+        <div id="questionBox" class="content-section">
+      <div class="transparentContainerBox">
+  
+            <!--Question Number-->
+      <div id="questionNumber">
+         <div class="theBrownVerticalDecoBar">
+            <p>Interview Practice<br>Question 1/5</p>
+         </div>
+      </div>
+
+
+   <!--Question Body-->
+   <div id="questionBody">
+    <p>Tell me a time that when you disagree with your manager or team leader. </p>
+  </div>
+
+  <!--Recorder-->
+  <div id="recorder">
+
+    <div id="allRecorderButtons">
+  	 <button id="recordButton" class="button-1">
+        <img src="images/RecordButton.svg" alt="Record Button" class="svgRecorderButton"/>
+    </button>
+    <div id="descriptionRecord">Record</div>
+  	 <button id="stopButton" class="button-1"disabled>
+        <img src="images/StopButton.svg" alt="Stop Button" class="svgRecorderButton" />
+    </button>
+    <div id="descriptionStop">Stop</div>
+    <!--<button id="recordButton" class="button-1">Record</button>
+  	 <button id="pauseButton" class="button-1" disabled>Pause</button>
+  	 <button id="stopButton" class="button-1" disabled>Stop</button>-->
+    <div id="instructionForRecording">Once ready, click the ‘Record’ button to start recording.</div>
+    </div>
+
+    <br>
+    <strong><div id="yourAnswer"></div></strong>
+    <div id="showAudio"></div>
+    <ol id="recordingsList"></ol>
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+  	<script src="js/recorder.js"></script>
+  	<script src="js/recorderapp.js"></script>
+  </div>
+      </div>
+        </div>
+
+   <!--Answer, Assess & Revise-->
+<div id="AAR">
+<div id="answerTranscript" class="content-section">
+  <div class="transparentContainerBox">
+  <div class="theBrownVerticalDecoBar">
+    <h3>Transcript of Your Answer<h3>
+  </div>
+  <p>blah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blah</p>
+</div>
+</div>
+
+<div id="assessment" class="content-section">
+  <div class="transparentContainerBox">
+  <div class="theBrownVerticalDecoBar">
+    <h3>Assessment</h3>
+  </div>
+    <p>
+      <span>Specificity: 4/5</span> - The answer provides a specific example with relevant details about the situation, but could benefit from more context, such as the industry or type of product being developed.‍<br><br>
+      <span>Actions: 4/5</span> - The steps taken by the interviewee are clearly articulated, including having an open debate and reaching a compromise with their colleague. However, it would be helpful to know more about the interviewee's role in the project to understand their actions better.<br><br>
+      <span>Results: 3/5</span> - The end result is conveyed, which was a compromise on the product roadmap, but the answer could benefit from more information on the impact of the compromise and how it affected the project or product.<br><br>
+      ‍<span>Learning: 3/5</span> - Although the interviewee did not mention any specific mistakes or failures, they do show a growth mindset by being open to compromise and taking customer feedback into consideration.<br><br>
+      <span>Soft skills: 4/5</span> - The answer illustrates several soft skills, including communication, critical thinking, problem-solving, and compromise. However, there is not much information about teamwork or leadership skills in this specific scenario.<br><br>
+      <span>Overall</span> - I would rate the answer a 3.6 out of 5. While the interviewee provided a specific example with clear actions and some soft skills demonstrated, more information on results and learning would have been helpful to fully assess their answer.<br>
+    </p>
+</div>
+</div>
+
+<div id="revisedAnswer" class="content-section">
+<div class="transparentContainerBox">
+  <div class="theBrownVerticalDecoBar">
+    <h3>Revised Answer</h3>
+  </div>
+  <p>blah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blahblah blahblah blah  blah blah blah blah</p>
+</div>
+</div>
+</div>
+      </section>
+    </main>
+
+    
+    <!--When a side Nav Bar item is clicked, the JavaScript event listener adds 
+    the class active to the clicked menu item and uses the scrollIntoView method 
+    to smoothly scroll to the corresponding content section. The CSS then changes 
+    the color of the active menu item using the .active class. -->
+<script>
+  const menuItems = document.querySelectorAll('.menu-item');
+  const contentSections = document.querySelectorAll('.content-section');
+  
+  function updateActiveMenuItem() {
+  contentSections.forEach((section, index) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 200 && rect.bottom >= 200) {
+      menuItems.forEach(item => item.classList.remove('active'));
+      menuItems[index].classList.add('active');
+    }
+  });
+}
+
+// Event listener for scrolling
+window.addEventListener('scroll', updateActiveMenuItem);
+
+// Event listeners for menu items to scroll to the respective sections
+menuItems.forEach((menuItem, index) => {
+  menuItem.addEventListener('click', () => {
+    contentSections[index].scrollIntoView({ behavior: 'smooth' });
+  });
+});
+  </script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
